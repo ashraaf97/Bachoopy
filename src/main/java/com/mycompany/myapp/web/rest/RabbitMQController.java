@@ -1,4 +1,4 @@
-package com.mycompany.myapp.web;
+package com.mycompany.myapp.web.rest;
 
 import com.mycompany.myapp.service.messagequeue.RabbitMQProducer;
 import org.springframework.beans.factory.annotation.Autowired;

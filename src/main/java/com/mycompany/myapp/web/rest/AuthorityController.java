@@ -8,7 +8,6 @@ import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.List;
 import java.util.Optional;
-
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
@@ -27,7 +26,7 @@ import tech.jhipster.web.util.ResponseUtil;
 @Transactional
 @Slf4j
 @RequiredArgsConstructor
-public class AuthorityResource {
+public class AuthorityController {
 
     private static final String ENTITY_NAME = "adminAuthority";
 
@@ -35,6 +34,7 @@ public class AuthorityResource {
     private String applicationName;
 
     private final AuthorityRepository authorityRepository;
+
     /**
      * {@code POST  /authorities} : Create a new authority.
      *

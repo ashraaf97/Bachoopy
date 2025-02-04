@@ -23,12 +23,12 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.transaction.annotation.Transactional;
 
 /**
- * Integration tests for the {@link AuthorityResource} REST controller.
+ * Integration tests for the {@link AuthorityController} REST controller.
  */
 @IntegrationTest
 @AutoConfigureMockMvc
 @WithMockUser(authorities = { "ROLE_ADMIN" })
-class AuthorityResourceIT {
+class AuthorityControllerIT {
 
     private static final String ENTITY_API_URL = "/api/authorities";
     private static final String ENTITY_API_URL_ID = ENTITY_API_URL + "/{name}";
