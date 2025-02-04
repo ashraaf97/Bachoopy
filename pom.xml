@@ -81,6 +81,7 @@
         <spring.profiles.active>dev</spring.profiles.active>
         <springdoc-openapi-starter-webmvc-api.version>2.7.0</springdoc-openapi-starter-webmvc-api.version>
         <testng.version>7.10.2</testng.version>
+        <amqp-client.version>5.24.0</amqp-client.version>
     </properties>
 
     <dependencyManagement>
@@ -351,6 +352,15 @@
           <version>${lombok.version}</version>
           <scope>provided</scope>
         </dependency>
+      <dependency>
+        <groupId>com.rabbitmq</groupId>
+        <artifactId>amqp-client</artifactId>
+        <version>${amqp-client.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-amqp</artifactId>
+      </dependency>
     </dependencies>
 
     <build>

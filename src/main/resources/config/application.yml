@@ -167,6 +167,12 @@ spring:
     ansi:
       console-available: true
 
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: jhipster
+    password: jhipster
+
 server:
   servlet:
     session:
