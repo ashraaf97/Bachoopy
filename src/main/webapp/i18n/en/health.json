@@ -17,7 +17,9 @@
       "readinessState": "Readiness state",
       "ping": "Application",
       "elasticsearch": "Elasticsearch",
-      "db": "Database"
+      "db": "Database",
+      "rabbit": "RabbitMQ",
+      "ssl": "SSL"
     },
     "table": {
       "service": "Service name",
