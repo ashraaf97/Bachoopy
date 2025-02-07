@@ -6,6 +6,7 @@ services:
       file: ./postgresql.yml
       service: postgresql
     profiles:
+      - dev
       - ''
       - prod
   elasticsearch:

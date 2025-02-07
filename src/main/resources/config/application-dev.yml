@@ -42,16 +42,12 @@ spring:
       indent-output: true
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:h2:file:./target/h2db/db/jhipsterSampleApplication;DB_CLOSE_DELAY=-1
-    username: jhipsterSampleApplication
-    password:
+    url: jdbc:postgresql://localhost:5432/jhipsterSampleApplication
+    username: jhipster
+    password: trust
     hikari:
       poolName: Hikari
       auto-commit: false
-  h2:
-    console:
-      # JHipster uses a custom h2-console initializer
-      enabled: true
   elasticsearch:
     uris: http://localhost:9200
   liquibase:
